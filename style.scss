@@ -20,12 +20,24 @@ $accent-2: #e4655f;
 
 h1,h2,h3,h4,h5,h6 {
     @include header-fonts;
+    text-decoration: underline;
+}
+
+h3,h4,h5,h6 {
+    margin-bottom: .6em;
+}
+
+h1 {
+    font-size: 2.4em;
+
 }
 
 body {
     @include main-font;
     line-height: 1.4em;
     padding: 1rem;
+
+    line-height: 1.6em;
 }
 
 * {
@@ -64,6 +76,27 @@ body {
     padding: 1em;
 }
 
+header {
+    display: flex;
+    gap: 1em;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    h1, h2 {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 10rem;
+        border-radius: 10px;
+    }
+}
+
 header, footer {
     grid-column: 1/4;
     padding: 2em;
@@ -72,7 +105,7 @@ header, footer {
 
 
     h2 {
-        font-size: .9em;
+        font-size: 1.2em;
     }
 }
 
@@ -118,4 +151,10 @@ header, footer {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
 
+    font-size: 2.5em;
+}

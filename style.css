@@ -3,6 +3,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: good-times, sans-serif;
   font-weight: 500;
   font-style: normal;
+  text-decoration: underline;
+}
+
+h3, h4, h5, h6 {
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 2.4em;
 }
 
 body {
@@ -11,6 +20,7 @@ body {
   font-style: normal;
   line-height: 1.4em;
   padding: 1rem;
+  line-height: 1.6em;
 }
 
 * {
@@ -48,6 +58,24 @@ body {
   padding: 1em;
 }
 
+header {
+  display: flex;
+  gap: 1em;
+}
+header article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+header h1, header h2 {
+  text-decoration: none;
+}
+header img {
+  max-width: 10rem;
+  border-radius: 10px;
+}
+
 header, footer {
   grid-column: 1/4;
   padding: 2em;
@@ -55,7 +83,7 @@ header, footer {
   border-radius: 10px;
 }
 header h2, footer h2 {
-  font-size: 0.9em;
+  font-size: 1.2em;
 }
 
 #zen-supporting {
@@ -93,4 +121,11 @@ header h2, footer h2 {
   .sidebar {
     grid-row: 2/3;
   }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  font-size: 2.5em;
 }/*# sourceMappingURL=style.css.map */
