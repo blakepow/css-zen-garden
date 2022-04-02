@@ -61,19 +61,18 @@ body {
 header {
   display: flex;
   gap: 1em;
-}
-header article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1em;
+  background-image: url("./assets/dark-logo.png");
+  background-position: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
 }
 header h1, header h2 {
   text-decoration: none;
-}
-header img {
-  max-width: 10rem;
-  border-radius: 10px;
+  margin-left: 13rem;
 }
 
 header, footer {
@@ -127,5 +126,14 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 1em;
-  font-size: 2.5em;
+}
+footer a {
+  color: #ffffff;
+  background-color: #5f8ee4;
+  padding: 0.5em;
+  border-radius: 5px;
+  transition: 250ms background-color ease-in-out;
+}
+footer a:hover {
+  background-color: #e4655f;
 }/*# sourceMappingURL=style.css.map */
