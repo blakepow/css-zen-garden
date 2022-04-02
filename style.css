@@ -132,6 +132,7 @@ footer a {
   background-color: #5f8ee4;
   padding: 0.5em;
   border-radius: 5px;
+  text-decoration: none;
   transition: 250ms background-color ease-in-out;
 }
 footer a:hover {
